@@ -1,17 +1,17 @@
-Что является основным источником пищи выдры?
-рыба
+What is the main food source for otters?
+fish
 
-Верно или нет? Выдры большую часть времени проводят на суше.
-верно
+Is it true or false? Otters spend the majority of time on land.
+true
 
-Сколько существует видов выдр?
+How many species of otters are there?
 13
 
-Верно или нет? Выдры родом из Австралии.
-нет
+Is it true or false? Otters come from Australia.
+false
 
-Верно или нет? Выдры изготавливают и используют инструменты.
-верно
+Is it true or false? Otters make and use tools.
+true
 
-Какова средняя продолжительность жизни выдры в дикой природе?
+How long do otters live in nature?
 10

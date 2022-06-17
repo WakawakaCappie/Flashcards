@@ -1,20 +1,25 @@
-Являются ли еноты травоядными, плотоядными или всеядными?
-всеядными
+Are raccoons herbivores, carnivores, or omnivores?
+omnivores
 
-Верно или нет? Еноты ведут ночной образ жизни.
-верно
+Is it true or false? Racoons are nocturnal.
+true
 
-Верно или нет? Еноты впадают в спячку.
-нет
+Is it true or false? Raccoons hibernate.
+false
 
-Верно или нет? Еноты могут бегать со скоростью до 25 км в час.
-верно
+Is it true or false? Raccoons can run at 25 km per hour.
+true
 
-Верно или нет? Еноты любят плавать!
-нет
+Is it true or false? Raccoons love to swim!
+false
 
-Верно или нет? Свое потомство самка кормит 24 раза в день.
-верно
+Is it true or false? The female feeds her offspring 24 times a day.
+true
 
-Верно или нет? Еноты – отдаленные родственники медведей.
-верно
+Is it true or false? Raccoons are distant relatives of bears.
+true
+
+
+
+
+

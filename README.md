@@ -1,51 +1,55 @@
 # Flashcards
 
-## Введение
-Вам предстоит создать приложение для флэш-карт, которое должно работать как показано на Рисунке 1. Сосредоточьтесь на написании элегантного, объектно-ориентированного кода, не забывая при этом о качественном проектировании и об отборе лучших методов.
+## Introduction
+
+You are going to create a flashcard application that should work as shown in Figure 1. Focus on writing elegant, object-oriented code while keeping in mind good design and best practices.
 
 ![flashcards animation](readme-assets/mvc.gif)
 
-*Рисунок 1*. Пример реализации флэш-карты.
+*Figure 1*. An example of a flashcard implementation.
 
 
 ### Model-View-Controller
-В данной задаче есть ещё одно интересное требование. Вам необходимо следовать [шаблону проектирования][шаблон проектирования Википедия], который называется [Model-View-Controller][wikipedia mvc] (MVC) . Прежде чем начать выполнять releases, убедитесь, что вы можете ответить на следующие вопросы.
 
-- Что представляет собой Model?
-- Как используется View?
-- В чем заключаются обязанности Controller?
+There is one more interesting requirement in this challenge. You need to follow the [design pattern] called [Model-View-Controller] (MVC). Before you start making releases, make sure you can answer the following questions:
+
+- What is Model?
+- How is View used?
+- What are the responsibilities of the Controller?
 
 
 ## Releases
-### Pre-release: описание и проектирование приложения
-Давайте договоримся о том, как вы будете выстраивать ваше приложение. Как выглядит игра с колодой флэш-карт – от момента загрузки данных в файл до проверки того, верна ли ваша догадка? Что должно происходить? Приложение должно работать так, как было показано на Рисунке 1, но не обязательно должно быть его точной копией: например, можно дать пользователям не одну, а несколько попыток на отгадывание карточки.
+### Pre-release: description and app design
 
-Когда у вас сформируется четкое понимание того, что должно происходить, то можно приступать к разработке приложения. Нарисуйте черновой вариант объектов, которые собираетесь использовать, их взаимодействие между собой, а также общий ход программы.
+Let's agree on how you will build your application. How does a game with a deck of flashcards look like - from loading the data into a file to checking if your guess is correct? What should happen? The application should work as shown in Figure 1 but it does not have to be an exact copy of it: for example, you can give users not one, but several attempts to guess the card.
 
-Этот release занимает приблизительно 30 минут. Если вы потратили больше времени и чувствуете, что застряли, то найдите человека, который поможет вам справиться с возникшей проблемой.
+When you have a clear understanding of what should be happening, then you can start developing the application. Draw a rough draft of the objects you intend to use, their interactions with each other, and the general flow of the program.
+
+This release takes approximately 30 minutes. If you've spent more time and feel stuck, find someone to help you deal with the problem.
 
 ### Release 0: Model-View-Controller
-Отлично! Всё спроектировали! Не забыли ли вы про MVC? У вас должны быть 3 основных независимых компонента. Изменение одного из этих компонентов не должно ломать другие. 
 
-- `Model` - отвечает за структуру хранения данных, методы работы с ними.
-- `View` - отвечает только за отображение, вывод данных на экран. 
-- `Controller` - умеет получать данные у Model, запрашивать View вывести их, обращаться к Model, чтобы та внесла изменения в имеющиеся данные и т.д. Важно, что всё это происходит в ответ на команды от пользователя, с которыми контроллер умеет работать.
+Excellent! Everything has been designed! Have you forgotten about MVC? You must have 3 main independent components. Changing one of these components should not break the others.
+
+- `Model` - is responsible for the data storage structure, methods of working with them.
+- `View` - is responsible only for displaying, outputting data to the screen.
+- `Controller` - can receive data from the Model, request the View to display them, contact the Model to make changes to the existing data, etc. It is important that all this happens in response to commands from the user, with which the controller can work.
   
-В `runner.js` должно быть минимум кода! Инициализация контроллера и передача ему необходимых параметров.
+There should be a minimum of code in `runner.js`! Initialization of the controller and passing the necessary parameters to it.
 
-При выполнении задания, следуйте как можно точнее шаблону проектирования MVC. Ваша реализация, скорее всего, будет отличаться от реализаций других команд, и это нормально.
+When completing the assignment, follow the MVC design pattern as closely as possible. Your implementation is likely to be different from other command implementations, and that's okay.
 
-*Примечание 1:* Здесь представлен [пример реализации MVC][пример реализации mvc] для приложения, связанного с больницей. Однако он достаточно непростой. Для начала можете поискать более базовые примеры в интернете.
+*Note 1:* Here is an [example of MVC implementation](https://github.com/Elbrus-Bootcamp/project-flashcards-console/blob/master/readme-assets/mvc-hospital-example.md):  for a hospital related application. However, it is quite complicated. To get started, you can search the internet for more basic examples.
 
-*Примечание 2:* В проекте уже имеются некоторые заготовки кода, которые могут вам помочь разобраться со связями между model, view и controller. Однако для их работоспособности вам нужно решить несколько проблем. Подумайте, что произойдет с контекстом (this), когда мы передадим какой-либо метод контроллера в качестве аргумента.
+*Note 2:* There are already some code snippets in the project that can help you figure out the relationships between model, view and controller. However, for them to work, you need to solve several problems. Think about what happens to the context (this) when we pass any controller method as an argument.
 
 ### Release 1: Code
 
-Пора кодить! У вас есть папка `topics`, в которой лежат несколько файлов с флеш-карточками (вопросами и ответами). Например, `nighthawk_flashcard_data.txt`. Пользователь должен иметь возможность воспользоваться и работать с любым из этих файлов. Также вы можете создать собственные файлы со своими вопросами.
+Time to code! You have a folder named `topics`, which has several files with flashcards (questions and answers). For instance, `nighthawk_flashcard_data.txt`. The user should be able to use and work with any of these files. You can also come up with your own questions.
+## Conclusion
 
-## Заключение
-Подумайте о решениях, которые вы принимали во время выполнения этой задачи. Каковы были результаты от проектирования, следования шаблону проектирования MVC?
+Think about the decisions that you made during this task. What were the results of designing the app and following the MVC pattern? 
 
-[пример реализации mvc]: readme-assets/mvc-hospital-example.md
-[шаблон проектирования Википедия]: http://en.wikipedia.org/wiki/Software_design_pattern
-[wikipedia mvc]: https://ru.wikipedia.org/wiki/Model-View-Controller
+[example of mvc realization]: readme-assets/mvc-hospital-example.md
+[design pattern]: http://en.wikipedia.org/wiki/Software_design_pattern
+[Model-View-Controller]: https://ru.wikipedia.org/wiki/Model-View-Controller
