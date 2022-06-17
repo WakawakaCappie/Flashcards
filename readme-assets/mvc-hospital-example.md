@@ -130,7 +130,7 @@ let HospitalController = require('./hospital_controller.js');
 
 let args = process.argv.slice(2);
 
-if(argv.length > 0) {
+if(arg.length > 0) {
   let patients = []// Create a collection of patient objects
 }
 
